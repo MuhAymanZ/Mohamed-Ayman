@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faFaceSmileWink,
 	faFaceSmileBeam,
 } from "@fortawesome/free-regular-svg-icons";
 import "./CSS Files/about.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
 	const languages = [
@@ -17,6 +19,10 @@ function About() {
 		"SQL",
 	];
 
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<section className="about-section" id="About">
 			<h1 className="about-title">
@@ -24,7 +30,12 @@ function About() {
 			</h1>
 			<div className="section-divider"></div>
 			<div className="content-wrapper">
-				<div className="about-text">
+				<div
+					className="about-text"
+					data-aos="fade-right"
+					data-aos-offset="200"
+					data-aos-easing="ease-in-sine"
+				>
 					<p>
 						As a fresh graduate from the BIS department, I have practical a
 						experience by building several projects and I've acquired
@@ -36,18 +47,13 @@ function About() {
 						dedicated to ongoing learning and actively seeking opportunities to
 						expand my knowledge and skills in this field
 					</p>
-					{/* <br />
-					<p>
-						In my personal life, I enjoy spending
-						time playing video games, and , and working out.{" "}
-					</p>
-					<br />
-					<p>
-						Feel free to reach out if you would like to explore the potential of
-						working together!
-					</p> */}
 				</div>
-				<div className="right-section">
+				<div
+					className="right-section"
+					data-aos="fade-left"
+					data-aos-offset="200"
+					data-aos-easing="ease-in-sine"
+				>
 					<div className="tools">
 						<h1>
 							<FontAwesomeIcon

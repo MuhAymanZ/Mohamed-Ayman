@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React, { useEffect } from "react";
 import "./CSS Files/projects.css";
 
 import Telestore from "./Images/Telestore.png";
@@ -11,6 +12,9 @@ import TravelList from "./Images/TravelList.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function ProjectCard({
 	title,
 	imageSrc,
@@ -18,8 +22,16 @@ function ProjectCard({
 	technologies,
 	description,
 }) {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
-		<div className="project">
+		<div
+			className="project"
+			data-aos="fade-up"
+			data-aos-easing="linear"
+			data-aos-duration="1000"
+		>
 			<a href={githubLink} target="_blank" rel="noopener noreferrer">
 				<img className="images" src={imageSrc} alt={title} />
 			</a>
@@ -48,6 +60,9 @@ function Projects() {
 			</h1>
 			<div className="projects-wrapper">
 				<ProjectCard
+					data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
 					title="WorldWise"
 					imageSrc={WorldWise}
 					githubLink="https://github.com/MuhAymanZ/worldwise"
@@ -101,7 +116,7 @@ function Projects() {
 					description="React Quiz App is a simple quiz application that dynamically fetch questions from a json file (json-server), and track score of answering right within the time limit for the quiz"
 				/>
 				<ProjectCard
-					title="Static Portfolio "
+					title="Travel List"
 					imageSrc={TravelList}
 					githubLink="https://github.com/MuhAymanZ/travel-list"
 					technologies="ReactJs,
