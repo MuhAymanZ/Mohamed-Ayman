@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+	faLinkedin,
+	faGithub,
+	faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 import "./CSS Files/Navbar.css";
 import Typewriter from "typewriter-effect/dist/core";
@@ -58,6 +62,14 @@ function Navbar() {
 				rel="noreferrer"
 			>
 				<FontAwesomeIcon icon={faGithub} size="2x" />
+			</a>
+			<a
+				href="https://www.facebook.com/MrAymon666/"
+				target="_blank"
+				className="icons"
+				rel="noreferrer"
+			>
+				<FontAwesomeIcon icon={faFacebook} size="2x" />
 			</a>
 
 			<ul className="nav-links">

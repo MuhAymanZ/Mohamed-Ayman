@@ -26,7 +26,7 @@ function About() {
 			<div className="content-wrapper">
 				<div className="about-text">
 					<p>
-						As a fresh graduate from the BIS department, I have practical
+						As a fresh graduate from the BIS department, I have practical a
 						experience by building several projects and I've acquired
 						certifications in various technologies.
 					</p>
