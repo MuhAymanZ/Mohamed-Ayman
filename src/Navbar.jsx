@@ -8,7 +8,7 @@ import {
 import { Link } from "react-scroll";
 import "./CSS Files/Navbar.css";
 import Typewriter from "typewriter-effect/dist/core";
-import Pdf from "./Images/AkshayVakilResume.pdf";
+import Pdf from "./Images/Mohamed-Ayman.pdf";
 
 function Navbar() {
 	const typewriterRef = useRef(null);
