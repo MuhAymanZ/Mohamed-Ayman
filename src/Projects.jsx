@@ -21,6 +21,7 @@ function ProjectCard({
 	githubLink,
 	technologies,
 	description,
+	demoLink,
 }) {
 	useEffect(() => {
 		AOS.init();
@@ -32,7 +33,7 @@ function ProjectCard({
 			data-aos-easing="linear"
 			data-aos-duration="1000"
 		>
-			<a href={githubLink} target="_blank" rel="noopener noreferrer">
+			<a href={demoLink} target="_blank" rel="noopener noreferrer">
 				<img className="images" src={imageSrc} alt={title} />
 			</a>
 			<div className="project-info">
@@ -66,6 +67,7 @@ function Projects() {
 					title="WorldWise"
 					imageSrc={WorldWise}
 					githubLink="https://github.com/MuhAymanZ/worldwise"
+					demoLink="https://worldwise-nine.vercel.app/"
 					technologies="ReactJs,
           React Router,
           Context Api,
@@ -81,6 +83,7 @@ function Projects() {
 					title="College Council Management System | Graduation Project"
 					imageSrc={GradProject}
 					githubLink="https://github.com/MuhAymanZ/Grad-Project"
+					demoLink="https://github.com/MuhAymanZ/Grad-Project"
 					technologies="HTML, CSS, Javascript, PHP, MySQL, Figma"
 					description="It is a web-based platform has been developed to improve council member collaboration and meeting management. It facilitates effective decision-making by providing a structured approach to planning and recording discussions on different topics."
 				/>
@@ -89,6 +92,7 @@ function Projects() {
 					title="TeleStore | ITI Project"
 					imageSrc={Telestore}
 					githubLink="https://github.com/MuhAymanZ/telestore-ecommerce"
+					demoLink="https://telestore-ecommerce.vercel.app/"
 					technologies="React JSX, CSS, Bootstrap, Swiper.js, FontAwesome"
 					description="TeleStore is a dynamic react ecommerce website, It has features like adding/removing to/from cart, filtering the products and it is fully dynamic and responsive."
 				/>
@@ -97,6 +101,7 @@ function Projects() {
 					title="Popcorn"
 					imageSrc={Popcorn}
 					githubLink="https://github.com/MuhAymanZ/Popcorn"
+					demoLink="https://popcorn-beryl.vercel.app/"
 					technologies="ReactJs,
           Css,
           OMDb API (Fake Movies Api),
@@ -108,6 +113,7 @@ function Projects() {
 					title="React Quiz"
 					imageSrc={ReactQuiz}
 					githubLink="https://github.com/MuhAymanZ/react-quiz"
+					demoLink="https://react-quiz-snowy.vercel.app/"
 					technologies="ReactJs,
           CSS,
           Json Server,
@@ -119,6 +125,7 @@ function Projects() {
 					title="Travel List"
 					imageSrc={TravelList}
 					githubLink="https://github.com/MuhAymanZ/travel-list"
+					demoLink="https://travel-list-gamma.vercel.app/"
 					technologies="ReactJs,
           Css,
           LocalStorage"
