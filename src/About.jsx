@@ -37,7 +37,7 @@ function About() {
 					data-aos-easing="ease-in-sine"
 				>
 					<p>
-						As a fresh graduate from the BIS department, I have practical a
+						As a fresh graduate from the BIS department, I have a practical
 						experience by building several projects and I've acquired
 						certifications in various technologies.
 					</p>
