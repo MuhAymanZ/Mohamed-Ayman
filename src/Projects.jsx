@@ -30,8 +30,8 @@ function ProjectCard({
 		<div
 			className="project"
 			data-aos="fade-up"
-			data-aos-easing="linear"
-			data-aos-duration="1000"
+			data-aos-easing="ease-in-sine"
+			data-aos-duration="700"
 		>
 			<a href={demoLink} target="_blank" rel="noopener noreferrer">
 				<img className="images" src={imageSrc} alt={title} />
