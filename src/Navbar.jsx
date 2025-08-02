@@ -16,7 +16,7 @@ function Navbar() {
 	useEffect(() => {
 		const typewriter = new Typewriter(typewriterRef.current, {
 			strings: [
-				"I am a BIS fresh grad",
+				"I am a BIS grad",
 				"I like coding",
 				"I enjoy challenges",
 				"Keep scrolling!",
@@ -94,9 +94,9 @@ function Navbar() {
 					<span ref={typewriterRef}></span>
 				</h2>
 				<p>
-					I'm currently a Frontend React Developer seeking many ways to improve
-					my skills through problem-solving and creating various projects!
-					Scroll down to learn more about me.
+					I'm currently an ERP Support Specialist & Frontend React Developer
+					seeking many ways to improve my skills through problem-solving and
+					creating various projects! Scroll down to learn more about me.
 				</p>
 				<Link to="Contact" smooth={true} duration={900}>
 					<button>Contact Me</button>
